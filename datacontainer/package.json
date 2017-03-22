@@ -1,0 +1,14 @@
+{
+  "name": "node-shared-modules",
+  "version": "0.0.1",
+  "description": "A docker example of shared volume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shaun Warman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
