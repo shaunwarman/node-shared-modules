@@ -1,4 +1,3 @@
-console.log(process.cwd());
 const Express = require('express');
 
 const App = Express();

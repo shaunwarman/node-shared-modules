@@ -3,21 +3,25 @@ services:
   app1:
     build: ./app
     container_name: app1
-    environment:
-      - APP_NAME="app1"
-      - APP_PORT=3001
     depends_on:
       - depscontainer
+    environment:
+      - APP_NAME='app1'
+      - APP_PORT=3001
+    ports:
+      - 3001:3001
     volumes:
       - deps:/app/data
   app2:
     build: ./app
     container_name: app2
-    environment:
-      - APP_NAME="app2"
-      - APP_PORT=3002
     depends_on:
       - depscontainer
+    environment:
+      - APP_NAME='app2'
+      - APP_PORT=3002
+    ports:
+      - 3002:3002
     volumes:
       - deps:/app/data
   depscontainer:
